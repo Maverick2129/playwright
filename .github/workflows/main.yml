@@ -14,7 +14,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       # Check out the code
@@ -39,4 +39,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: npx playwright test sample.spec.js
+        run: npx playwright test tests/sample.spec.js
